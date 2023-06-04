@@ -1,8 +1,8 @@
-### Project Title: RSA Factoring Challenge
+## Project Title: RSA Factoring Challenge
 
 The following are tasks involved in this project:
 
-0. Factorize all the things!: 
+### Factorize all the things!: 
 
 Factorize as many numbers as possible into a product of two smaller numbers.
 
@@ -22,45 +22,47 @@ Factorize as many numbers as possible into a product of two smaller numbers.
 * Push all your scripts, source code, etc… to your repository, but we will only run your executable factors
 
 <pre>
-	julien@ubuntu:~/factors$ cat tests/test00 
-	4
-	12
-	34
-	128
-	1024
-	4958
-	1718944270642558716715
-	9
-	99
-	999
-	9999
-	9797973
-	49
-	239809320265259
-	julien@ubuntu:~/factors$ time ./factors tests/test00
-	4=2*2
-	12=6*2
-	34=17*2
-	128=64*2
-	1024=512*2
-	4958=2479*2
-	1718944270642558716715=343788854128511743343*5
-	9=3*3
-	99=33*3
-	999=333*3
-	9999=3333*3
-	9797973=3265991*3
-	49=7*7
-	239809320265259=15485783*15485773
-	
-	real    0m0.009s
-	user    0m0.008s
-	sys 0m0.001s
-	julien@ubuntu:~/factors$
+julien@ubuntu:~/factors$ cat tests/test00 
+4
+12
+34
+128
+1024
+4958
+1718944270642558716715
+9
+99
+999
+9999
+9797973
+49
+239809320265259
+julien@ubuntu:~/factors$ time ./factors tests/test00
+4=2*2
+12=6*2
+34=17*2
+128=64*2
+1024=512*2
+4958=2479*2
+1718944270642558716715=343788854128511743343*5
+9=3*3
+99=33*3
+999=333*3
+9999=3333*3
+9797973=3265991*3
+49=7*7
+239809320265259=15485783*15485773
+
+real    0m0.009s
+user    0m0.008s
+sys 0m0.001s
+julien@ubuntu:~/factors$
 </pre>
 
 
-1. RSA Factoring Challenge
+
+
+### RSA Factoring Challenge
 
 RSA Laboratories states that: for each RSA number n, there exist prime numbers p and q such that n = p × q. The problem is to find these two primes, given only n. This task is the same as task 0, except:
 
@@ -71,24 +73,23 @@ RSA Laboratories states that: for each RSA number n, there exist prime numbers p
 Read: [RSA Factoring Challenge](https://intranet.alxswe.com/rltoken/Cn9Lq_kKNpNx4dmvFMuwgQ)
 
 <pre>
-	julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-1
-	6
-	julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-1
-	6=3*2
-	julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-2
-	77
-	julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-2
-	77=11*7
-	julien@ubuntu:~/RSA Factoring Challenge$ [...]  
-	julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-15
-	239821585064027
-	julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-15 
-	239821585064027=15486481*15485867
-	julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-16
-	2497885147362973
-	julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-16
-	2497885147362973=49979141*49978553
-	julien@ubuntu:~/RSA Factoring Challenge$ [...]
-
+julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-1
+6
+julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-1
+6=3*2
+julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-2
+77
+julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-2
+77=11*7
+julien@ubuntu:~/RSA Factoring Challenge$ [...]  
+julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-15
+239821585064027
+julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-15 
+239821585064027=15486481*15485867
+julien@ubuntu:~/RSA Factoring Challenge$ cat tests/rsa-16
+2497885147362973
+julien@ubuntu:~/RSA Factoring Challenge$ ./rsa tests/rsa-16
+2497885147362973=49979141*49978553
+julien@ubuntu:~/RSA Factoring Challenge$ [...]
 </pre>
 
